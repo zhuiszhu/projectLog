@@ -1,0 +1,51 @@
+管理员集合: admins
+    用户名: username
+    密码 : password
+    
+班级集合 : classList
+    班级名: classname
+    所属校区 : city
+    是否启用: active
+    所属讲师: adminID
+    项目ID : projectID (班级当前正在进行的项目)
+    班级唯一标识 : classSyboml
+
+学员集合: student
+    用户名 : username
+    密码 : password
+    姓名 : studentname
+    班级唯一标识 : classSyboml
+    所属班级 : classID
+    班级名称 : classname
+
+项目模板集合: projectModule
+    项目名: projectname
+    项目总分 : fraction
+    项目功能点: functions Array<point>
+        评分点:  名称 : name
+                 分数 : fraction
+    项目评分点: deduction Array<point>
+        评分点:  名称 : name
+                 分数 : fraction
+    是否启用 : active
+    讲师ID : adminID
+
+日志集合 : logs
+    项目id : projectID
+    学员id : studentID
+    进度描述 : details Array<string>
+    日期时间 : times
+    当前功能点完成状态 : funStat
+
+
+项目信息集合 : projectinfo
+    项目id : projectID
+    学员id : studentID
+    班级id : classID
+    项目名 : projectname 
+    项目进度 : progress
+    项目功能点 : functions : Array<Point>
+        功能点 : 功能名 : name
+                 完成状态 : status
+                 分数 : fraction
+    项目总评分 : fraction

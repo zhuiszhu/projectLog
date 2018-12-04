@@ -1,0 +1,43 @@
+<div id="myModal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">提示</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label for="classname" class="col-md-3 control-label">班级名:</label>
+            <div class="col-md-8">
+              <input type="text" name="classname" id="classname" placeholder="请输入班级名" class="form-control">
+              <p class="help-block hidden">班级名可用</p>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="city" class="col-md-3 control-label">所属校区:</label>
+            <div class="col-md-8">
+              <input type="text" name="city" list="classoption" id="city" placeholder="请输入所属校区" class="form-control">
+              <datalist id="classoption" class="classoption">
+                <option value="" />
+              </datalist>
+              <p class="help-block hidden">Example block-level help text here.</p>
+            </div>
+          </div>
+          <div class="form-group checkbox">
+            <label for="city" class="col-md-3 control-label">&nbsp;</label>
+            <div class="col-md-8">
+              <label>
+                <input type="checkbox" id="isActive" />设置为当前班级
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary modal-enter addclass-btn">添加</button>
+      </div>
+    </div>
+  </div>
+</div>

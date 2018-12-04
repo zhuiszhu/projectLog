@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>学员项目管理系统-班级管理(管理员)</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="/style/base.css" />
+  <link rel="stylesheet" href="/style/index.css" />
+  <link rel="stylesheet" href="/style/addClass.css" />
+</head>
+
+<body>
+  <%- include("../admHeader") %>
+  <%- include("modal") %>
+  <%- include("editModal") %>
+  <div class="container-fluid main">
+    <div class="row">
+      <div class="col-md-12 content">
+        <div class="content-header">
+          <div class="row">
+            <div class="col-md-3">
+              <h3>班级管理</h3>
+            </div>
+            <div class="col-md-3 pull-right">
+              <a href="javascript:;" data-toggle="modal" data-target="#myModal" class="btn btn-primary pull-right">添加班级</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="hr"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <table class="class-list table table-hover text-center">
+                <thead>
+                  <tr>
+                    <th>班级名</th>
+                    <th>所属校区</th>
+                    <th>班级唯一标识</th>
+                    <th>正在开发的项目</th>
+                    <th>启用状态</th>
+                    <th>操作</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="classname"></td>
+                    <td class="city"></td>
+                    <td class="classSymbol"></td>
+                    <td class="currentProject">
+                      <select class="form-control">
+                        <option>无</option>
+                        <option>vue</option>
+                        <option>react</option>
+                      </select>
+                    </td>
+                    <td class="isActive"></td>
+                    <td>
+                      <a href="javascript:;" class="btn btn-primary active-btn btn-xs">启用</a>
+                      <a href="javascript:;" class="btn btn-warning edit-btn btn-xs">编辑</a>
+                      <a href="javascript:;" class="btn btn-danger  remove-btn btn-xs">删除</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <script src="/javascripts/adminMain.js"></script>
+  <script src="/javascripts/admin_manageClass.js"></script>
+</body>
+
+</html>

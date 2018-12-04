@@ -1,0 +1,11 @@
+<div class="col-md-2">
+  <ul class="nav nav-pills nav-stacked">
+    <% list.map(function(item,index){ %>
+      <% if(item.active){ %>
+        <li role="presentation" class="active"><a href=<%= '#'+item.href %> data-toggle="tab"><%= item.text %></a></li>
+      <% }else{ %>
+        <li role="presentation"><a href=<%= '#'+item.href %> data-toggle="tab"><%= item.text %></a></li>
+      <% } %>
+    <% }) %>
+  </ul>
+</div>

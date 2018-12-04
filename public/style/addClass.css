@@ -1,0 +1,16 @@
+.table tr.warning .isActive{
+    color: #11b827;
+}
+
+.table tr.warning .active-btn{
+    pointer-events: none;
+    cursor: not-allowed;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: .65;
+}
+
+.table tr .isActive{
+    color: #999;
+}

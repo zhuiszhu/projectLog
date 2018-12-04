@@ -1,0 +1,38 @@
+<div id="myModal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">添加日志</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal">
+          <div class="input-box">
+            <div class="form-group input-item">
+              <label for="classname" class="col-md-1 text-center control-label"><span>1</span></label>
+              <div class="col-md-10">
+                <input type="text" name="logItem" placeholder="请输入日志信息" class="form-control">
+              </div>
+              <div class="col-md-1">
+                <a href="javascript:;" class="del-btn">
+                  <span class="glyphicon glyphicon-remove"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="classname" class="col-md-1 control-label">&nbsp;</label>
+            <div class="col-md-10">
+              <a href="javascript:;" class="btn btn-success addItem-btn">添加</a>
+            </div>
+          </div>
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary modal-enter addLog-btn">提交日志</button>
+      </div>
+    </div>
+  </div>
+</div>

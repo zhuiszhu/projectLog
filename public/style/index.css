@@ -1,0 +1,84 @@
+.content{
+    padding:20px;
+    position: relative;
+}
+.content.open .col-md-2{
+    width: 25%;
+}
+.student-panel{
+    height: 100%;
+    overflow-y: auto;
+    overflow-x:hidden;
+}
+
+.content.open .student-panel{
+    width: 66.666%;
+    padding-right: 10px;
+}
+.student-panel{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.log-detail{
+    width: 33.334%;
+    padding:10px;
+    height: 100%;
+    position: absolute;
+    right: -33.334%;
+    top:0;
+    transition: right 0.3s;
+}
+.content.open .log-detail{
+    right: 0;
+}
+.log-detail .log-panel{
+    height: 100%;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.34);
+    padding:10px;
+    display: flex;
+    flex-direction:column;
+}
+
+.log-title{
+    height: 50px;
+    line-height: 50px;
+}
+.log-title .form-control{
+    margin-top: 8px;
+}
+.log-detail .close-log{
+    margin-top:14px; 
+}
+
+.log-detail .progress{
+    height: 14px;
+    background-color:#eee; 
+}
+.log-detail .progress .progress-bar{
+    line-height: 14px;
+    min-width: 30px;
+}
+.log-detail .function-list{
+    flex: 1;
+}
+.log-detail .log-list{
+    height: 250px;
+    margin-top:20px; 
+    overflow-y: auto;
+}
+.log-detail .btn-more{
+    position: relative;
+    /* height: 34px; */
+    bottom: 0;
+}
+.log-detail .log-header{
+    height: 84px;
+}
+.log-detail .log-body{
+    flex: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+}

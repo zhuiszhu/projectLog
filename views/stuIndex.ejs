@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>学员项目管理系统-学员首页</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="/style/base.css" />
+  <link rel="stylesheet" href="/style/index.css" />
+  <link rel="stylesheet" href="/style/stuIndex.css" />
+</head>
+
+<body>
+  <%- include("stuIndexContent/modal") %>
+  <%- include("stuHeader") %>
+  <div class="container-fluid main">
+    <div class="row">
+      <div class="page-message h100 hidden">
+        <h3 class="text-center">你的班级尚未开启进入项目开发!
+          <hr /> 请咨询当前班级讲师.</h3>
+      </div>
+      <div class="col-md-12 content hidden">
+        <div class="col-md-7">
+          <h3 class="b-border title project-name"></h3>
+          <div class="row functions">
+            <!-- success in-dev -->
+            <div class="col-md-4 function-item">
+              <div class="btn-group ">
+                <a href="javascript:;" data-toggle="dropdown" class="btn btn-block fun-name dropdown-toggle"></a>
+                <ul class="dropdown-menu">
+                    <li><a href="javascript:;" data-value="undone">未完成</a></li>
+                    <li><a href="javascript:;" data-value="in-dev">开发中</a></li>
+                    <li><a href="javascript:;" data-value="success">已完成</a></li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+          <h4>已完成进度</h4>
+          <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+              aria-valuemax="100" style="width: 20px;">
+              0%
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 h100">
+          <div class="log-list">
+            <div id="myScroll">
+              <div class="log-container">
+                <div class="log-box">
+                  <div class="log-item">
+                    <p class="time">2018年11月29日 08:34:59</p>
+                    <ul>
+                      <li>
+                        <span>1</span>完成登录注册功能
+                      </li>
+                      <li>
+                        <span>2</span>完成数据验证
+                      </li>
+                      <li>
+                        <span>3</span>正在开发轮播图组件
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="log-item">
+                    <p class="time">2018年11月29日 08:34:59</p>
+                    <ul>
+                      <li>
+                        <span>4</span>完成登录注册功能
+                      </li>
+                      <li>
+                        <span>5</span>完成数据验证
+                      </li>
+                      <li>
+                        <span>6</span>正在开发轮播图组件
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="log-item">
+                    <p class="time">2018年11月29日 08:34:59</p>
+                    <ul>
+                      <li>
+                        <span>1</span>完成登录注册功能
+                      </li>
+                      <li>
+                        <span>2</span>完成数据验证
+                      </li>
+                      <li>
+                        <span>3</span>正在开发轮播图组件
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="log-item">
+                    <p class="time">2018年11月29日 08:34:59</p>
+                    <ul>
+                      <li>
+                        <span>1</span>完成登录注册功能
+                      </li>
+                      <li>
+                        <span>2</span>完成数据验证
+                      </li>
+                      <li>
+                        <span>3</span>正在开发轮播图组件
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="log-item add-item">
+                    <ul data-toggle="modal" data-target="#myModal">
+                      <li>
+                        添加今日日志
+                      </li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <script src="/javascripts/iscroll/iscroll.js"></script>
+  <script src="/javascripts/student_index.js"></script>
+
+</body>
+
+</html>

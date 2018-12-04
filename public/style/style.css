@@ -1,0 +1,139 @@
+*{
+  margin:0;
+  padding:0;
+  color: #666;
+}
+body {
+  padding: 0 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #ccc;
+}
+li{
+  list-style-type: none;
+}
+
+
+.api-list>li{
+  background: #fff;
+  padding:10px 40px;
+  margin: 20px 0;
+  border-radius:6px; 
+}
+.api-list>li h3{
+  line-height: 45px;
+  margin-left: -20px;
+}
+.api-list>li>p,
+.api-list>li .data{
+  line-height: 36px;
+  font-size: 16px;
+}
+.api-list>li .key{
+  font-size: 14px;
+  color: #666 !important;
+}
+
+.api-list>li .url span{
+  color:#00B7FF;
+}
+.api-list>li .method span{
+  color:#ff1e00;
+}
+.title{
+  padding:0 20px;
+  margin-top:30px;
+  line-height: 55px;
+  color:#333;
+}
+.api-list>li .keyname{
+  color: #0e9
+}
+
+.api-list>li .text{
+  color:#333;
+  margin-left: 16px;
+}
+
+.api-list>li .keyname i{
+  color: #999;
+}
+
+a {
+  color: #00B7FF;
+}
+.api-input-list{
+  background: #fff;
+}
+.api-input-list li{
+  display: flex;
+  padding:10px 30px;
+  line-height: 45px;
+  background: rgba(0,0,0,0.20);
+  margin: 10px;
+  position: relative;
+}
+.api-input-list li .key{
+  flex: 1;
+}
+.api-input-list li input{
+  height: 30px;
+  padding:0 10px;
+}
+.api-input-list li .del{
+  text-decoration: none;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  background: #d40;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  position: absolute;
+  right: 30px;
+  top:50%;
+  transform: translateY(-50%);
+}
+.api-input-list li .key input{
+  width: 80px;
+}
+.api-input-list li .value{
+  flex: 4;
+}
+
+main{
+  margin: 20px 0;
+  padding:30px 15px;
+  background: #fff;
+}
+
+.url{
+  line-height: 45px;
+  
+}
+.url input{
+  width: 300px;
+  height: 30px;
+  padding:0 10px;
+}
+
+#btn,
+#send
+{
+  width: 120px;
+  height: 40px;
+}
+
+#goods_info input[name='banner'],
+#goods_info input[name='imgs']{
+  display: block;
+  margin: 5px;
+}
+#goods_info .addBanner,
+#goods_info .addImgs
+{
+  width: 80px;
+  height: 35px;
+
+}
+
